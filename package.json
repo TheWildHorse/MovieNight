@@ -1,0 +1,28 @@
+{
+  "name": "movie-night",
+  "version": "1.0.0",
+  "description": "Application that helps you and your friends pick a movie to watch together.",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheWildHorse/MovieNight.git"
+  },
+  "keywords": [
+    "movienight",
+    "movie",
+    "movies",
+    "picker"
+  ],
+  "author": "Igor Rinkovec",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheWildHorse/MovieNight/issues"
+  },
+  "homepage": "https://github.com/TheWildHorse/MovieNight#readme",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3",
+    "mongo": "^0.1.0",
+    "mongodb": "^2.0.52"
+  }
+}
