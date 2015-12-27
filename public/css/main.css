@@ -224,6 +224,7 @@ a.fav {
 	color: white;
 	width: 50px;
 	height: 50px;
+	cursor: pointer;
 }
 
 .icon-hook {
@@ -299,4 +300,9 @@ a.fav {
 
 .overlay > button:disabled {
 	background-color: #ccc3cb;
+}
+
+.disabled {
+	pointer-events: none;
+	cursor: default;
 }

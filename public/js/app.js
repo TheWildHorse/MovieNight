@@ -41,7 +41,7 @@ app.controller('CreatePollCtl', function($scope, $http, toaster, $location) {
                 if($scope.movies[movieId].Poster === undefined || $scope.movies[movieId].Poster.substring(0, 4) != 'http')
                     $scope.movies[movieId].style = {};
                 else
-                    $scope.movies[movieId].style = {'background-image': 'URL(' + $scope.movies[movieId].Poster + ')'};
+                    $scope.movies[movieId].style = {'background-image': 'URL(http://img.omdbapi.com/?i=' + $scope.movies[movieId].imdbID + '&apikey=db496034)'};
             }
             else {
                 $scope.movies[movieId] = {};

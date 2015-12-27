@@ -4,12 +4,12 @@
     <div class="movie" ng-repeat="mid in [0,1,2]">
         <span class="input input--isao">
             <input class="input__field input__field--isao" type="text" ng-model="movieName[mid]" ng-change="updateMovie(mid);"/>
-            <label class="input__label input__label--isao" data-content="Movie {{ mid }}">
+            <label class="input__label input__label--isao" data-content="Movie {{ mid+1 }}">
                 <span class="input__label-content input__label-content--isao">Movie {{ mid+1 }}</span>
             </label>
         </span>
         <br>
-        <a href="http://www.imdb.com/title/{{movies[mid].imdbID}}/">
+        <a href="http://www.imdb.com/title/{{movies[mid].imdbID}}/" ng-class="{disabled:movies[mid].imdbID == undefined}">
             <div class="poster" ng-style="movies[mid].style" id="movie{{ mid }}">
                 <div class="rating">{{ movies[mid].imdbRating || '-' }}</div>
                 <div class="year">{{ movies[mid].Year }}</div>
